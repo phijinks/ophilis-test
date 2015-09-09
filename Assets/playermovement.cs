@@ -24,5 +24,8 @@ public class playermovement : MonoBehaviour {
 		if(Input.GetKeyDown("w")) {
 			rb.AddForce(new Vector3(0, 1000, 0));
 		}
+		if(Input.GetKey("s")) {
+			rb.AddForce(new Vector3(0, -100, 0));
+		}
 	}
 }

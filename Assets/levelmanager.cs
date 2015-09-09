@@ -6,6 +6,12 @@ using System;
 
 public class levelmanager : MonoBehaviour {
 	public Transform block;
+	public Transform rampleft;
+	public Transform rampright;
+	public Transform uprampleft;
+	public Transform uprampright;
+
+	float tile = 32f;
 
 	void Start () {
 		loadFile("./Assets/lvl.txt");
@@ -15,10 +21,13 @@ public class levelmanager : MonoBehaviour {
 
 	}
 
-	void addBlock(int a, int b) {
-		float x = (float)a * 3.2f;
-		float y = (float)b * 3.2f;
-		Instantiate(block, new Vector3(x, y, 0), Quaternion.identity);
+	void addBlock(int t, int a, int b) {
+		if(t > 5 || t <= 0) {return;}
+		Transform[] tiles = {block, rampleft, rampright, uprampleft, uprampright};
+
+		float x = (float)a * (tile / 10);
+		float y = (float)b * (tile / 10);
+		Instantiate(tiles[t-1], new Vector3(x, y, 0), Quaternion.identity);
 	}
 
 	// adapted (slightly) from http://answers.unity3d.com/questions/279750/loading-data-from-a-txt-file-c.html
@@ -41,8 +50,10 @@ public class levelmanager : MonoBehaviour {
 						// iterate over every character
 						for(int a=0; a<line.Length; a++) {
 							string c = line.Substring(a, 1);
-							if(c.Equals("1")) {
-								addBlock(a, b);
+							if(!c.Equals("0")) {
+								int t = 0;
+								Int32.TryParse(c, out t);
+								addBlock(t, a, b);
 							}
 						}
 						b--;
