@@ -12,9 +12,9 @@ public class fungus : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.gameObject.name.Equals("Player")) {
-			GetComponent<SpriteRenderer> ().sprite = fungusSprite;
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.name.Equals("Player")) {
+			GetComponent<SpriteRenderer>().sprite = fungusSprite;
 		}
 	}
 }

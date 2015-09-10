@@ -42,7 +42,7 @@ public class levelmanager : MonoBehaviour {
 				do {
 					line = sr.ReadLine();
 					if(line != null && line.Length > 0) {
-						Debug.Log(line + " " + b);
+						//Debug.Log(line + " " + b);
 						if(line.StartsWith("# ")) { // level height
 							Int32.TryParse(line.Substring(1), out b);
 						}
@@ -63,7 +63,7 @@ public class levelmanager : MonoBehaviour {
 				sr.Close();
 			}
 
-			Debug.Log("reading level was successful");
+			//Debug.Log("reading level was successful");
 			return true;
 		} catch(IOException e) {
 			Debug.Log(e.Message);
