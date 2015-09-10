@@ -13,24 +13,26 @@ public class movement : MonoBehaviour {
 	}
 	
 	void Update () {
-		float accel = 0.1f;
+		float accel = 0.05f;
 		float maxSpeed = 0.5f;
 
 		float friction = 0.6f;
 
-		float jumpSpeed = 0.6f;
-		float gravity = 0.03f;
+		float jumpSpeed = 0.9f;
+		float gravity = 0.04f;
 		float terminalVelocity = 1f;
 
 		float mult = 1f;
-		if(!grounded) {mult = 0.2f;}
+		if(!grounded) {mult = 0.6f;}
 
 		if(Input.GetKey("a")) {
+			if(dx > 0 && grounded) {mult *= 0.4f;}
 			dx -= accel * mult;
 			if(dx < 0 - maxSpeed) {
 				dx = 0 - maxSpeed;
 			}
 		} else if(Input.GetKey("d")) {
+			if(dx < 0 && grounded) {mult *= 0.4f;}
 			dx += accel * mult;
 			if(dx > maxSpeed) {
 				dx = maxSpeed;
@@ -62,11 +64,9 @@ public class movement : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D(Collider2D c) {
-		if(dy <= 0) {
-			footCollisions.Remove(c);
-			if(footCollisions.Count == 0) {
-				grounded = false;
-			}
+		footCollisions.Remove(c);
+		if(footCollisions.Count == 0) {
+			grounded = false;
 		}
 	}
 }
