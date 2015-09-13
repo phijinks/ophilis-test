@@ -6,10 +6,11 @@ public class movement : MonoBehaviour {
 	float dy = 0;
 
 	bool grounded = false;
-	ArrayList footCollisions;
+	int totalCollisions;
+	int footCollisions;
 
 	void Start () {
-		footCollisions = new ArrayList();
+
 	}
 	
 	void Update () {
@@ -26,13 +27,13 @@ public class movement : MonoBehaviour {
 		if(!grounded) {mult = 0.6f;}
 
 		if(Input.GetKey("a")) {
-			if(dx > 0 && grounded) {mult *= 0.4f;}
+			if(dx > 0 && grounded) {mult *= 0.6f;}
 			dx -= accel * mult;
 			if(dx < 0 - maxSpeed) {
 				dx = 0 - maxSpeed;
 			}
 		} else if(Input.GetKey("d")) {
-			if(dx < 0 && grounded) {mult *= 0.4f;}
+			if(dx < 0 && grounded) {mult *= 0.6f;}
 			dx += accel * mult;
 			if(dx > maxSpeed) {
 				dx = maxSpeed;
@@ -43,11 +44,11 @@ public class movement : MonoBehaviour {
 
 		GetComponent<Rigidbody2D>().MovePosition(transform.position + new Vector3(dx, dy, 0));
 
-		Debug.Log(grounded);
-		if(!grounded) {
+		//Debug.Log(grounded);
+		if(!grounded || totalCollisions == 0) {
 			dy -= gravity;
 			if(gravity < 0 - terminalVelocity) {gravity = 0 - terminalVelocity;}
-		} else {
+		} else if(grounded) {
 			dy = 0;
 			if(Input.GetKeyDown("w")) {
 				dy = jumpSpeed;
@@ -56,16 +57,20 @@ public class movement : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter2D(Collision2D c) {totalCollisions++;}
+	void OnCollisionExit2D(Collision2D c) {totalCollisions--; if(totalCollisions < 0) {totalCollisions = 0;}}
+
 	void OnTriggerEnter2D(Collider2D c) {
 		if(dy <= 0) {
-			footCollisions.Add(c);
+			footCollisions++;
 			grounded = true;
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D c) {
-		footCollisions.Remove(c);
-		if(footCollisions.Count == 0) {
+		footCollisions--;
+		if(footCollisions <= 0) {
+			footCollisions = 0;
 			grounded = false;
 		}
 	}
