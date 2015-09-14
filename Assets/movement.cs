@@ -14,8 +14,8 @@ public class movement : MonoBehaviour {
 	}
 	
 	void Update () {
-		float accel = 0.05f;
-		float maxSpeed = 0.5f;
+		float accel = 0.08f;
+		float maxSpeed = 1.0f;
 
 		float friction = 0.6f;
 
@@ -40,6 +40,12 @@ public class movement : MonoBehaviour {
 			}
 		} else if(grounded) {
 			dx *= friction;
+		}
+
+		if(dx < 0) {
+			transform.localScale = new Vector3(-1, 1, 1);
+		} else {
+			transform.localScale = new Vector3(1, 1, 1);
 		}
 
 		GetComponent<Rigidbody2D>().MovePosition(transform.position + new Vector3(dx, dy, 0));

@@ -1,0 +1,605 @@
+fileFormatVersion: 2
+guid: 660294ae254474e7db4c1df68f43f997
+timeCreated: 1442198239
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: lamppost_10x5_0
+    21300002: lamppost_10x5_1
+    21300004: lamppost_10x5_2
+    21300006: lamppost_10x5_3
+    21300008: lamppost_10x5_4
+    21300010: lamppost_10x5_5
+    21300012: lamppost_10x5_6
+    21300014: lamppost_10x5_7
+    21300016: lamppost_10x5_8
+    21300018: lamppost_10x5_9
+    21300020: lamppost_10x5_10
+    21300022: lamppost_10x5_11
+    21300024: lamppost_10x5_12
+    21300026: lamppost_10x5_13
+    21300028: lamppost_10x5_14
+    21300030: lamppost_10x5_15
+    21300032: lamppost_10x5_16
+    21300034: lamppost_10x5_17
+    21300036: lamppost_10x5_18
+    21300038: lamppost_10x5_19
+    21300040: lamppost_10x5_20
+    21300042: lamppost_10x5_21
+    21300044: lamppost_10x5_22
+    21300046: lamppost_10x5_23
+    21300048: lamppost_10x5_24
+    21300050: lamppost_10x5_25
+    21300052: lamppost_10x5_26
+    21300054: lamppost_10x5_27
+    21300056: lamppost_10x5_28
+    21300058: lamppost_10x5_29
+    21300060: lamppost_10x5_30
+    21300062: lamppost_10x5_31
+    21300064: lamppost_10x5_32
+    21300066: lamppost_10x5_33
+    21300068: lamppost_10x5_34
+    21300070: lamppost_10x5_35
+    21300072: lamppost_10x5_36
+    21300074: lamppost_10x5_37
+    21300076: lamppost_10x5_38
+    21300078: lamppost_10x5_39
+    21300080: lamppost_10x5_40
+    21300082: lamppost_10x5_41
+    21300084: lamppost_10x5_42
+    21300086: lamppost_10x5_43
+    21300088: lamppost_10x5_44
+    21300090: lamppost_10x5_45
+    21300092: lamppost_10x5_46
+    21300094: lamppost_10x5_47
+    21300096: lamppost_10x5_48
+    21300098: lamppost_10x5_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: lamppost_10x5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_9
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1668
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_14
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_15
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_16
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_17
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_18
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_19
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1251
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_21
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_22
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_23
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_24
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_25
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_26
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_27
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_28
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_29
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 834
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_32
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_33
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_34
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_35
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_36
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_37
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_38
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_39
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 417
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_41
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_42
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_43
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_44
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_45
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_46
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_47
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_48
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamppost_10x5_49
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 0
+        width: 97
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
