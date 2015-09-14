@@ -6,12 +6,9 @@ using System;
 
 public class levelmanager : MonoBehaviour {
 	public Transform block;
-	public Transform rampleft;
-	public Transform rampright;
-	public Transform uprampleft;
-	public Transform uprampright;
 
-	float tile = 32f;
+	float tilex = 3.8f;
+	float tiley = 3.6f;
 
 	void Start () {
 		loadFile("./Assets/lvl.txt");
@@ -22,11 +19,11 @@ public class levelmanager : MonoBehaviour {
 	}
 
 	void addBlock(int t, int a, int b) {
-		if(t > 5 || t <= 0) {return;}
-		Transform[] tiles = {block, rampleft, rampright, uprampleft, uprampright};
+		Transform[] tiles = {block};
+		if(t > tiles.Length || t <= 0) {return;}
 
-		float x = (float)a * (tile / 10);
-		float y = (float)b * (tile / 10);
+		float x = (float)a * tilex;
+		float y = (float)b * tiley;
 		Instantiate(tiles[t-1], new Vector3(x, y, 0), Quaternion.identity);
 	}
 
