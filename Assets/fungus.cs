@@ -9,10 +9,7 @@ public class fungus : MonoBehaviour {
 	public Sprite[] frames = new Sprite[15];
 
 	void Start () {
-		for(int i=0; i<15; i++) {
-			//frames[i] = Resources.Load("block_anim/" + i, typeof(Sprite)) as Sprite;
-			//Debug.Log(frames[i]);
-		}
+
 	}
 	
 	void Update () {

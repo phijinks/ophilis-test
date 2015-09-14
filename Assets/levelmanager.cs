@@ -10,6 +10,10 @@ public class levelmanager : MonoBehaviour {
 	float tilex = 3.8f;
 	float tiley = 3.6f;
 
+	// default player start
+	float px = 5;
+	float py = 5;
+
 	void Start () {
 		loadFile("./Assets/lvl.txt");
 	}
@@ -47,7 +51,10 @@ public class levelmanager : MonoBehaviour {
 						// iterate over every character
 						for(int a=0; a<line.Length; a++) {
 							string c = line.Substring(a, 1);
-							if(!c.Equals("0")) {
+							if(c.Equals("$")) {
+								px = (float)a * tilex;
+								py = (float)b * tiley;
+							} else if(!c.Equals("0")) {
 								int t = 0;
 								Int32.TryParse(c, out t);
 								addBlock(t, a, b);
@@ -59,6 +66,9 @@ public class levelmanager : MonoBehaviour {
 				while(line != null);
 				sr.Close();
 			}
+			
+			GameObject player = GameObject.Find("Player");
+			player.transform.position = new Vector3(this.px, this.py, 0);
 
 			//Debug.Log("reading level was successful");
 			return true;

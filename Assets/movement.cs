@@ -57,6 +57,10 @@ public class movement : MonoBehaviour {
 		}
 	}
 
+	public void MoveTo(float x, float y) {
+		transform.position = new Vector3(x, y, 0);
+	}
+
 	void OnCollisionEnter2D(Collision2D c) {totalCollisions++;}
 	void OnCollisionExit2D(Collision2D c) {totalCollisions--; if(totalCollisions < 0) {totalCollisions = 0;}}
 
