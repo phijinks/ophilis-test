@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: eadd396fdc188456496b492c8f0c0169
+timeCreated: 1442453851
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tile-2_1x15_0
+    21300002: tile-2_1x15_1
+    21300004: tile-2_1x15_2
+    21300006: tile-2_1x15_3
+    21300008: tile-2_1x15_4
+    21300010: tile-2_1x15_5
+    21300012: tile-2_1x15_6
+    21300014: tile-2_1x15_7
+    21300016: tile-2_1x15_8
+    21300018: tile-2_1x15_9
+    21300020: tile-2_1x15_10
+    21300022: tile-2_1x15_11
+    21300024: tile-2_1x15_12
+    21300026: tile-2_1x15_13
+    21300028: tile-2_1x15_14
+    21300030: tile-2_1x15_15
+    21300032: tile-2_1x15_16
+    21300034: tile-2_1x15_17
+    21300036: tile-2_1x15_18
+    21300038: tile-2_1x15_19
+    21300040: tile-2_1x15_20
+    21300042: tile-2_1x15_21
+    21300044: tile-2_1x15_22
+    21300046: tile-2_1x15_23
+    21300048: tile-2_1x15_24
+    21300050: tile-2_1x15_25
+    21300052: tile-2_1x15_26
+    21300054: tile-2_1x15_27
+    21300056: tile-2_1x15_28
+    21300058: tile-2_1x15_29
+    21300060: tile-2_1x15_30
+    21300062: tile-2_1x15_31
+    21300064: tile-2_1x15_32
+    21300066: tile-2_1x15_33
+    21300068: tile-2_1x15_34
+    21300070: tile-2_1x15_35
+    21300072: tile-2_1x15_36
+    21300074: tile-2_1x15_37
+    21300076: tile-2_1x15_38
+    21300078: tile-2_1x15_39
+    21300080: tile-2_1x15_40
+    21300082: tile-2_1x15_41
+    21300084: tile-2_1x15_42
+    21300086: tile-2_1x15_43
+    21300088: tile-2_1x15_44
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tile-2_1x15_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6986
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6487
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5988
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5489
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4990
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4491
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3992
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3493
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2994
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2495
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1996
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1497
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 998
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 499
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tile-2_1x15_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 527
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
