@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 4918ec64934c64f4b8b53a01bcea233d
+timeCreated: 1442799217
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: crate_4x7_0
+    21300002: crate_4x7_1
+    21300004: crate_4x7_2
+    21300006: crate_4x7_3
+    21300008: crate_4x7_4
+    21300010: crate_4x7_5
+    21300012: crate_4x7_6
+    21300014: crate_4x7_7
+    21300016: crate_4x7_8
+    21300018: crate_4x7_9
+    21300020: crate_4x7_10
+    21300022: crate_4x7_11
+    21300024: crate_4x7_12
+    21300026: crate_4x7_13
+    21300028: crate_4x7_14
+    21300030: crate_4x7_15
+    21300032: crate_4x7_16
+    21300034: crate_4x7_17
+    21300036: crate_4x7_18
+    21300038: crate_4x7_19
+    21300040: crate_4x7_20
+    21300042: crate_4x7_21
+    21300044: crate_4x7_22
+    21300046: crate_4x7_23
+    21300048: crate_4x7_24
+    21300050: crate_4x7_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: crate_4x7_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1170
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1170
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1170
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_3
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1170
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 975
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 975
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_6
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 975
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_7
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 975
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 780
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 780
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_11
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 780
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 585
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 585
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_15
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 585
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_17
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 390
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_18
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 390
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_19
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 390
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_21
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 195
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_22
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 195
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_23
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 195
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crate_4x7_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 328
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
