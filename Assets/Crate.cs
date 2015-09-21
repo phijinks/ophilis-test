@@ -2,29 +2,32 @@
 using System.Collections;
 
 public class Crate : MonoBehaviour {
-	public Player player;
+	private GameObject player;
 	Animator anim;
-	int stage = 1;
-	float dy = 0;
+	int stage = 1; // how damaged the crate is
+	float size = 2.3f; // size of the crate
 
 	void Start () {
 		anim = GetComponent<Animator>();
+		player = GameObject.Find("Player");
+		transform.localScale = new Vector3 (size, size, 1);
 	}
 	
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			Vector3 p = player.transform.position;
 			Vector3 my = transform.position;
-			if(Mathf.Abs(p.x - my.x) < 5 && stage <= 3) {
-				float size = 3;
+
+			if(Mathf.Abs(p.x - my.x) < 5 && Mathf.Abs(p.y - my.y) < 3 && stage <= 3) {
+				// flip sprite based on what direction it was hit from
 				float flip = (p.x < my.x ? 1f : -1f);
 				transform.localScale = new Vector3(flip*size, size, 1);
 
-				anim.Play("Impact_" + stage);
-				if(stage == 3) {
-					Destroy(GetComponent<Collider2D>());
+				anim.Play("Impact_" + stage); // play corresponding hit animation
+				if(stage == 3) { // crate is destroyed
+					Destroy(GetComponent<Collider2D>()); // destroy the collider so the player can walk through it
 				}
-				stage++;
+				stage++; // go to next hit animation
 			}
 		}
 	}

@@ -2,38 +2,40 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+	// delta x and y
 	float dx = 0;
 	float dy = 0;
 
-	bool grounded = false;
-	int totalCollisions;
-	int footCollisions;
+	bool grounded = false; // whether the player is on the ground
+	int totalCollisions; // number of collisions
+	int footCollisions; // number of collisions with the bottom of the collider
 
 	void Start () {
 
 	}
 	
 	void Update () {
-		float accel = 0.08f;
-		float maxSpeed = 1.0f;
+		// constants for platforming code
+		const float accel = 0.08f;
+		const float maxSpeed = 1.0f;
 
-		float friction = 0.6f;
+		const float friction = 0.6f;
 
-		float jumpSpeed = 0.9f;
-		float gravity = 0.04f;
-		float terminalVelocity = 1f;
+		const float jumpSpeed = 0.9f;
+		const float gravity = 0.04f;
+		const float terminalVelocity = 1f;
 
-		float mult = 1f;
-		if(!grounded) {mult = 0.6f;}
+		float mult = 1f; // acceleration multiplier
+		if(!grounded) {mult = 0.6f;} // player has less control in the air
 
 		if(Input.GetKey("a")) {
-			if(dx > 0 && grounded) {mult *= 0.6f;}
+			if(dx > 0 && grounded) {mult *= 0.6f;} // skid
 			dx -= accel * mult;
 			if(dx < 0 - maxSpeed) {
 				dx = 0 - maxSpeed;
 			}
 		} else if(Input.GetKey("d")) {
-			if(dx < 0 && grounded) {mult *= 0.6f;}
+			if(dx < 0 && grounded) {mult *= 0.6f;} // skid
 			dx += accel * mult;
 			if(dx > maxSpeed) {
 				dx = maxSpeed;
@@ -42,6 +44,7 @@ public class Player : MonoBehaviour {
 			dx *= friction;
 		}
 
+		// flip sprite based on x speed
 		if(dx < 0) {
 			transform.localScale = new Vector3(-1, 1, 1);
 		} else {
@@ -50,10 +53,9 @@ public class Player : MonoBehaviour {
 
 		GetComponent<Rigidbody2D>().MovePosition(transform.position + new Vector3(dx, dy, 0));
 
-		//Debug.Log(grounded);
 		if(!grounded || totalCollisions == 0) {
 			dy -= gravity;
-			if(gravity < 0 - terminalVelocity) {gravity = 0 - terminalVelocity;}
+			if(dy < 0 - terminalVelocity) {dy = 0 - terminalVelocity;}
 		} else if(grounded) {
 			dy = 0;
 			if(Input.GetKeyDown("w")) {
