@@ -12,8 +12,10 @@ public class Player : MonoBehaviour {
 	int totalCollisions; // number of collisions
 	int footCollisions; // number of collisions with the bottom of the collider
 
-	void Start () {
+	Animator anim;
 
+	void Start () {
+		anim = GetComponent<Animator>();
 	}
 	
 	void Update () {
@@ -52,11 +54,18 @@ public class Player : MonoBehaviour {
 			dx *= friction;
 		}
 
+		bool running = (Mathf.Abs(dx) > 0.4);
+
 		// flip sprite based on x speed
-		if (dx < 0) {
-			transform.localScale = new Vector3 (-1, 1, 1);
+		transform.localScale = new Vector3((running ? 1 : -1) * (dx < 0 ? 1 : -1), 1, 1);
+		// yeah. yeah. two ternary operators in one line. i am awful and i'm going to hell :^)
+
+		if(running) {
+			anim.Play("Run");
+			anim.speed = Mathf.Abs(dx)*3;
 		} else {
-			transform.localScale = new Vector3 (1, 1, 1);
+			anim.Play("Idle");
+			anim.speed = 1;
 		}
 
 		GetComponent<Rigidbody2D> ().MovePosition (transform.position + new Vector3 (dx, dy, 0));

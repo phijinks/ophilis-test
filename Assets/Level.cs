@@ -88,7 +88,7 @@ public class Level : MonoBehaviour {
 				}
 			}
 
-			Debug.Log("reading level was successful");
+			//Debug.Log("reading level was successful");
 			return true;
 		} catch(IOException e) {
 			Debug.Log(e.Message);
