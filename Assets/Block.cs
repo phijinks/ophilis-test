@@ -4,6 +4,10 @@ using System.Collections;
 public class Block : MonoBehaviour {
 	Animator anim;
 	SpriteRenderer sprite;
+	public bool canGrowFungus = true;
+
+	float tilex = 3.8f; // width of tile grid space
+	float tiley = 3.6f; // height of tile grid space
 
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -14,9 +18,10 @@ public class Block : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
+	void OnTriggerStay2D(Collider2D other) {
 		// if the block touches the player's foot collider, play the fungus growing animation
-		if(other.gameObject.name.Equals("Player") && anim != null) {
+		string c = other.gameObject.name;
+		if((c.Equals("Player") || c.Contains("Projectile")) && anim != null) {
 			anim.Play("Fungus");
 			sprite.sortingLayerName = "Fungus"; // put the sprite in front of the non-fungus-covered blocks
 		}

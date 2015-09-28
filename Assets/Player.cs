@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+	public Transform projectile;
+
 	// delta x and y
 	float dx = 0;
 	float dy = 0;
@@ -60,12 +62,22 @@ public class Player : MonoBehaviour {
 		transform.localScale = new Vector3((running ? 1 : -1) * (dx < 0 ? 1 : -1), 1, 1);
 		// yeah. yeah. two ternary operators in one line. i am awful and i'm going to hell :^)
 
-		if(running) {
-			anim.Play("Run");
-			anim.speed = Mathf.Abs(dx)*3;
-		} else {
-			anim.Play("Idle");
-			anim.speed = 1;
+		// thanks to http://answers.unity3d.com/questions/362629/how-can-i-check-if-an-animation-is-being-played-or.html
+		if (!(anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)) {
+			if (!grounded) {
+				anim.Play("Jump");
+				anim.speed = 0.5f;
+			} else if (running) {
+				anim.Play ("Run");
+				anim.speed = Mathf.Abs (dx) * 3;
+			} else {
+				anim.Play("Idle");
+				anim.speed = 1;
+			}
+		}
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			anim.Play("Attack");
+			Instantiate(projectile, transform.position, Quaternion.identity);
 		}
 
 		GetComponent<Rigidbody2D> ().MovePosition (transform.position + new Vector3 (dx, dy, 0));

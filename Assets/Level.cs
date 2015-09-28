@@ -19,7 +19,7 @@ public class Level : MonoBehaviour {
 	float py = 5;
 
 	void Start () {
-		loadFile("./Assets/level.txt");
+		loadLevel("1");
 	}
 
 	void Update () {
@@ -32,8 +32,12 @@ public class Level : MonoBehaviour {
 		Instantiate(blocks[t - 1], new Vector3(x, y, 0), Quaternion.identity);
 	}
 
+	void loadLevel(string name) {
+		loadBlocks("./Assets/Levels/" + name + "_blocks.txt");
+	}
+
 	// adapted (slightly) from http://answers.unity3d.com/questions/279750/loading-data-from-a-txt-file-c.html
-	bool loadFile(string filename) {
+	bool loadBlocks(string filename) {
 		try {
 			string line;
 			StreamReader sr = new StreamReader(filename, Encoding.Default);
@@ -101,6 +105,6 @@ public class Level : MonoBehaviour {
 			if(a < 0 || b < 0 || a >= dimx || b >= dimy) {return 1;}
 			return data[a, b];
 		}
-		return 0;
+		return 1;
 	}
 }
