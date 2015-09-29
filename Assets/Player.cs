@@ -11,10 +11,13 @@ public class Player : MonoBehaviour {
 	float grace = 0; // grace period during which you can jump after leaving a platform
 
 	bool grounded = false; // whether the player is on the ground
+	int jumpsLeft = 0; // number of jumps the player has left
+	int numJumps = 2; // number of jumps the player can make (2 = double jump, etc.)
 	int totalCollisions; // number of collisions
 	int footCollisions; // number of collisions with the bottom of the collider
 
 	Animator anim;
+	bool attacked = false;
 
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -59,11 +62,17 @@ public class Player : MonoBehaviour {
 		bool running = (Mathf.Abs(dx) > 0.4);
 
 		// flip sprite based on x speed
-		transform.localScale = new Vector3((running ? 1 : -1) * (dx < 0 ? 1 : -1), 1, 1);
-		// yeah. yeah. two ternary operators in one line. i am awful and i'm going to hell :^)
+		transform.localScale = new Vector3((dx < 0 ? -1 : 1), 1, 1);
 
 		// thanks to http://answers.unity3d.com/questions/362629/how-can-i-check-if-an-animation-is-being-played-or.html
-		if (!(anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)) {
+		float time = anim.GetCurrentAnimatorStateInfo (0).normalizedTime;
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName("Attack") && time < 1) {
+			if(time > 0.2f && !attacked) {
+				Instantiate(projectile, transform.position, Quaternion.identity);
+				attacked = true;
+			}
+		} else {
+			attacked = false;
 			if (!grounded) {
 				anim.Play("Jump");
 				anim.speed = 0.5f;
@@ -75,9 +84,8 @@ public class Player : MonoBehaviour {
 				anim.speed = 1;
 			}
 		}
-		if(Input.GetKeyDown(KeyCode.Space)) {
+		if(Input.GetKey(KeyCode.Space)) {
 			anim.Play("Attack");
-			Instantiate(projectile, transform.position, Quaternion.identity);
 		}
 
 		GetComponent<Rigidbody2D> ().MovePosition (transform.position + new Vector3 (dx, dy, 0));
@@ -94,11 +102,13 @@ public class Player : MonoBehaviour {
 			dy = 0;
 			grace = 12;
 		}
-		if(Input.GetKeyDown("w") && (grounded || grace > 0)) {
+		if(Input.GetKeyDown("w") && (grounded || grace > 0 || jumpsLeft > 0)) {
 			dy = jumpSpeed;
 			grounded = false;
+			jumpsLeft--;
 			grace = 0;
 		}
+		Debug.Log(jumpsLeft);
 	}
 
 	public void MoveTo(float x, float y) {
@@ -121,6 +131,7 @@ public class Player : MonoBehaviour {
 		if(dy <= 0) {
 			footCollisions++;
 			grounded = true;
+			jumpsLeft = numJumps; // reset jumps
 		}
 	}
 

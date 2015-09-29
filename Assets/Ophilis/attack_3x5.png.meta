@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cedf12af8ef7341caa9a0cbec50716f9
-timeCreated: 1443397758
+timeCreated: 1443404245
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -68,29 +68,29 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 968
-        width: 233
-        height: 242
+        y: 3776
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_1
       rect:
         serializedVersion: 2
-        x: 233
-        y: 968
-        width: 233
-        height: 242
+        x: 908
+        y: 3776
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_2
       rect:
         serializedVersion: 2
-        x: 466
-        y: 968
-        width: 233
-        height: 242
+        x: 1816
+        y: 3776
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -98,29 +98,29 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 726
-        width: 233
-        height: 242
+        y: 2833
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_4
       rect:
         serializedVersion: 2
-        x: 233
-        y: 726
-        width: 233
-        height: 242
+        x: 908
+        y: 2833
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_5
       rect:
         serializedVersion: 2
-        x: 466
-        y: 726
-        width: 233
-        height: 242
+        x: 1816
+        y: 2833
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,29 +128,29 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 484
-        width: 233
-        height: 242
+        y: 1890
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_7
       rect:
         serializedVersion: 2
-        x: 233
-        y: 484
-        width: 233
-        height: 242
+        x: 908
+        y: 1890
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_8
       rect:
         serializedVersion: 2
-        x: 466
-        y: 484
-        width: 233
-        height: 242
+        x: 1816
+        y: 1890
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,29 +158,29 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 242
-        width: 233
-        height: 242
+        y: 947
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_10
       rect:
         serializedVersion: 2
-        x: 233
-        y: 242
-        width: 233
-        height: 242
+        x: 908
+        y: 947
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_11
       rect:
         serializedVersion: 2
-        x: 466
-        y: 242
-        width: 233
-        height: 242
+        x: 1816
+        y: 947
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,29 +188,29 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 233
-        height: 242
+        y: 4
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_13
       rect:
         serializedVersion: 2
-        x: 233
-        y: 0
-        width: 233
-        height: 242
+        x: 908
+        y: 4
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: attack_3x5_14
       rect:
         serializedVersion: 2
-        x: 466
-        y: 0
-        width: 233
-        height: 242
+        x: 1816
+        y: 4
+        width: 908
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

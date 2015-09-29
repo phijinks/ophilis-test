@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 20a71754696594f8fb4b5b71a5722a66
-timeCreated: 1442807236
+timeCreated: 1443406346
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -71,19 +71,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6744
-        width: 871
-        height: 843
+        y: 5800
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_1
       rect:
         serializedVersion: 2
-        x: 871
-        y: 6744
-        width: 871
-        height: 843
+        x: 749
+        y: 5800
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -91,19 +91,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5901
-        width: 871
-        height: 843
+        y: 5075
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_3
       rect:
         serializedVersion: 2
-        x: 871
-        y: 5901
-        width: 871
-        height: 843
+        x: 749
+        y: 5075
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,19 +111,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5058
-        width: 871
-        height: 843
+        y: 4350
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_5
       rect:
         serializedVersion: 2
-        x: 871
-        y: 5058
-        width: 871
-        height: 843
+        x: 749
+        y: 4350
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4215
-        width: 871
-        height: 843
+        y: 3625
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_7
       rect:
         serializedVersion: 2
-        x: 871
-        y: 4215
-        width: 871
-        height: 843
+        x: 749
+        y: 3625
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,19 +151,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3372
-        width: 871
-        height: 843
+        y: 2900
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_9
       rect:
         serializedVersion: 2
-        x: 871
-        y: 3372
-        width: 871
-        height: 843
+        x: 749
+        y: 2900
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,19 +171,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2529
-        width: 871
-        height: 843
+        y: 2175
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_11
       rect:
         serializedVersion: 2
-        x: 871
-        y: 2529
-        width: 871
-        height: 843
+        x: 749
+        y: 2175
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,19 +191,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1686
-        width: 871
-        height: 843
+        y: 1450
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_13
       rect:
         serializedVersion: 2
-        x: 871
-        y: 1686
-        width: 871
-        height: 843
+        x: 749
+        y: 1450
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,19 +211,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 843
-        width: 871
-        height: 843
+        y: 725
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_15
       rect:
         serializedVersion: 2
-        x: 871
-        y: 843
-        width: 871
-        height: 843
+        x: 749
+        y: 725
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,18 +232,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 871
-        height: 843
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: run_2x9_17
       rect:
         serializedVersion: 2
-        x: 871
+        x: 749
         y: 0
-        width: 871
-        height: 843
+        width: 749
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
