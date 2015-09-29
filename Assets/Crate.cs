@@ -24,14 +24,16 @@ public class Crate : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
+	void OnTriggerStay2D(Collider2D other) {
 		if(other.gameObject.name.Contains("Projectile")) {
-			Break();
+			Vector3 pos = other.gameObject.transform.position;
+			float dist = (transform.position - pos).magnitude;
+			if(dist <= 4) {Break();}
 		}
 	}
 
 	void Break() {
-		if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 2) {return;}
+		if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.5) {return;}
 
 		Vector3 p = player.transform.position;
 		Vector3 my = transform.position;

@@ -6,9 +6,6 @@ public class Block : MonoBehaviour {
 	SpriteRenderer sprite;
 	public bool canGrowFungus = true;
 
-	float tilex = 3.8f; // width of tile grid space
-	float tiley = 3.6f; // height of tile grid space
-
 	void Start () {
 		anim = GetComponent<Animator>();
 		sprite = GetComponent<SpriteRenderer>();

@@ -68,14 +68,13 @@ public class Player : MonoBehaviour {
 		float time = anim.GetCurrentAnimatorStateInfo (0).normalizedTime;
 		if (anim.GetCurrentAnimatorStateInfo (0).IsName("Attack") && time < 1) {
 			if(time > 0.2f && !attacked) {
-				Instantiate(projectile, transform.position, Quaternion.identity);
+				Instantiate(projectile, transform.position + (new Vector3(0, -2.5f, 0))*transform.localScale.y, Quaternion.identity);
 				attacked = true;
 			}
 		} else {
 			attacked = false;
 			if (!grounded) {
-				anim.Play("Jump");
-				anim.speed = 0.5f;
+				//anim.Play("Jump");
 			} else if (running) {
 				anim.Play ("Run");
 				anim.speed = Mathf.Abs (dx) * 3;
@@ -108,7 +107,6 @@ public class Player : MonoBehaviour {
 			jumpsLeft--;
 			grace = 0;
 		}
-		Debug.Log(jumpsLeft);
 	}
 
 	public void MoveTo(float x, float y) {
