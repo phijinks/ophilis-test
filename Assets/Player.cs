@@ -74,7 +74,7 @@ public class Player : MonoBehaviour {
 		} else {
 			attacked = false;
 			if (!grounded) {
-				//anim.Play("Jump");
+				anim.Play("Jump");
 			} else if (running) {
 				anim.Play ("Run");
 				anim.speed = Mathf.Abs (dx) * 2;
@@ -93,8 +93,7 @@ public class Player : MonoBehaviour {
 			dy -= gravity * ((!Input.GetKey("w") && dy > 0) ? 4 : 1);
 			if (grace > 0) {
 				grace -= 1;
-			} else {
-				jumpsLeft = 0;
+				if(grace == 0) {jumpsLeft--;}
 			}
 			if (dy < 0 - terminalVelocity) {
 				dy = 0 - terminalVelocity;

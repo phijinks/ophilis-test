@@ -6,6 +6,7 @@ using System;
 
 public class Level : MonoBehaviour {
 	public Transform[] blocks = new Transform[7]; // list of block types
+	public Transform[] walls = new Transform[4];
 
 	float tilex = 3.8f; // width of tile grid space
 	float tiley = 3.6f; // height of tile grid space
@@ -29,12 +30,13 @@ public class Level : MonoBehaviour {
 	void addBlock(int t, int a, int b) { // adds a block to the level grid
 		float x = (float)a * tilex;
 		float y = (float)b * tiley;
-		float[] z_offset = {0, 0, 0, 0, 0, 0, 20};
+		float[] z_offset = {0, 0, 0, 0, 0, 0, UnityEngine.Random.Range(10, 80)};
 		Instantiate(blocks[t - 1], new Vector3(x, y, z_offset[t - 1]), Quaternion.identity);
 	}
 
 	void loadLevel(string name) {
 		loadBlocks("./Assets/Levels/" + name + "_blocks.txt");
+		Instantiate(walls[0], new Vector3(-20, (float)dimy * tiley * 0.5f, -1), Quaternion.identity);
 	}
 
 	// adapted (slightly) from http://answers.unity3d.com/questions/279750/loading-data-from-a-txt-file-c.html
