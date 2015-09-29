@@ -5,7 +5,7 @@ using System.IO;
 using System;
 
 public class Level : MonoBehaviour {
-	public Transform[] blocks = new Transform[4]; // list of block types
+	public Transform[] blocks = new Transform[7]; // list of block types
 
 	float tilex = 3.8f; // width of tile grid space
 	float tiley = 3.6f; // height of tile grid space
@@ -29,7 +29,8 @@ public class Level : MonoBehaviour {
 	void addBlock(int t, int a, int b) { // adds a block to the level grid
 		float x = (float)a * tilex;
 		float y = (float)b * tiley;
-		Instantiate(blocks[t - 1], new Vector3(x, y, 0), Quaternion.identity);
+		float[] z_offset = {0, 0, 0, 0, 0, 0, 20};
+		Instantiate(blocks[t - 1], new Vector3(x, y, z_offset[t - 1]), Quaternion.identity);
 	}
 
 	void loadLevel(string name) {

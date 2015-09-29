@@ -68,7 +68,7 @@ public class Player : MonoBehaviour {
 		float time = anim.GetCurrentAnimatorStateInfo (0).normalizedTime;
 		if (anim.GetCurrentAnimatorStateInfo (0).IsName("Attack") && time < 1) {
 			if(time > 0.2f && !attacked) {
-				Instantiate(projectile, transform.position + (new Vector3(0, -2.5f, 0))*transform.localScale.y, Quaternion.identity);
+				Instantiate(projectile, transform.position + (new Vector3(0, -1.5f, 0))*transform.localScale.y, Quaternion.identity);
 				attacked = true;
 			}
 		} else {
@@ -77,7 +77,7 @@ public class Player : MonoBehaviour {
 				//anim.Play("Jump");
 			} else if (running) {
 				anim.Play ("Run");
-				anim.speed = Mathf.Abs (dx) * 3;
+				anim.speed = Mathf.Abs (dx) * 2;
 			} else {
 				anim.Play("Idle");
 				anim.speed = 1;
@@ -93,6 +93,8 @@ public class Player : MonoBehaviour {
 			dy -= gravity * ((!Input.GetKey("w") && dy > 0) ? 4 : 1);
 			if (grace > 0) {
 				grace -= 1;
+			} else {
+				jumpsLeft = 0;
 			}
 			if (dy < 0 - terminalVelocity) {
 				dy = 0 - terminalVelocity;
@@ -126,7 +128,7 @@ public class Player : MonoBehaviour {
 	void OnCollisionExit2D(Collision2D c) {totalCollisions--; if(totalCollisions < 0) {totalCollisions = 0;}}
 
 	void OnTriggerEnter2D(Collider2D c) {
-		if(dy <= 0) {
+		if(dy <= 0 && c.gameObject.name.Contains("Block")) {
 			footCollisions++;
 			grounded = true;
 			jumpsLeft = numJumps; // reset jumps
@@ -134,10 +136,12 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D(Collider2D c) {
-		footCollisions--;
-		if(footCollisions <= 0) {
-			footCollisions = 0;
-			grounded = false;
+		if(c.gameObject.name.Contains("Block")) {
+			footCollisions--;
+			if(footCollisions <= 0) {
+				footCollisions = 0;
+				grounded = false;
+			}
 		}
 	}
 }
