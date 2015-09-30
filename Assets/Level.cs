@@ -36,7 +36,9 @@ public class Level : MonoBehaviour {
 
 	void loadLevel(string name) {
 		loadBlocks("./Assets/Levels/" + name + "_blocks.txt");
-		Instantiate(walls[0], new Vector3(-20, (float)dimy * tiley * 0.5f, -1), Quaternion.identity);
+		float mid_y = (float)dimy * tiley * 0.5f;
+		Instantiate(walls[0], new Vector3(-20, mid_y, -1), Quaternion.identity);
+		Instantiate(walls[1], new Vector3(20 + (float)dimx * tilex, mid_y, -1), Quaternion.identity);
 	}
 
 	// adapted (slightly) from http://answers.unity3d.com/questions/279750/loading-data-from-a-txt-file-c.html
