@@ -5,7 +5,8 @@ using System.IO;
 using System;
 
 public class Level : MonoBehaviour {
-	public Transform[] blocks = new Transform[7]; // list of block types
+	public GameObject[] blocks = new GameObject[3]; // list of block types
+	public GameObject[] props = new GameObject[5];
 	public Transform[] walls = new Transform[4];
 
 	float tilex = 3.8f; // width of tile grid space
@@ -20,7 +21,7 @@ public class Level : MonoBehaviour {
 	float py = 5;
 
 	void Start () {
-		loadLevel("1");
+		loadLevel("test");
 	}
 
 	void Update () {
@@ -28,17 +29,25 @@ public class Level : MonoBehaviour {
 	}
 
 	void addBlock(int t, int a, int b) { // adds a block to the level grid
+		if (t > blocks.Length) {return;}
 		float x = (float)a * tilex;
 		float y = (float)b * tiley;
-		float[] z_offset = {0, 0, 0, 0, 0, 0, UnityEngine.Random.Range(10, 80)};
-		Instantiate(blocks[t - 1], new Vector3(x, y, z_offset[t - 1]), Quaternion.identity);
+		GameObject block = Instantiate (blocks [t - 1], new Vector3 (x, y, 0), Quaternion.identity) as GameObject;
+		if (block != null && GetBlock(a, b+1) == 0) {
+			block.BroadcastMessage("Start");
+			block.BroadcastMessage("SetFloor");
+		}
 	}
 
 	void loadLevel(string name) {
 		loadBlocks("./Assets/Levels/" + name + "_blocks.txt");
-		float mid_y = (float)dimy * tiley * 0.5f;
-		Instantiate(walls[0], new Vector3(-20, mid_y, -1), Quaternion.identity);
-		Instantiate(walls[1], new Vector3(20 + (float)dimx * tilex, mid_y, -1), Quaternion.identity);
+		loadProps("./Assets/Levels/" + name + "_props.txt");
+
+		float dist = 2;
+		for(float y = 0; y<=(dimy*tiley); y += walls[0].GetComponent<Renderer>().bounds.size.y) {
+			Instantiate(walls[0], new Vector3(-dist, y, -1), Quaternion.identity);
+			Instantiate(walls[1], new Vector3(dist + (float)dimx * tilex, y, -1), Quaternion.identity);
+		}
 	}
 
 	// adapted (slightly) from http://answers.unity3d.com/questions/279750/loading-data-from-a-txt-file-c.html
@@ -105,7 +114,38 @@ public class Level : MonoBehaviour {
 		}
 	}
 
-	public int getBlock(int a, int b) {
+	bool loadProps(string filename) {
+		try {
+			string line;
+			StreamReader sr = new StreamReader(filename, Encoding.Default);
+			
+			using(sr) {
+				do {
+					line = sr.ReadLine();
+					if(line == null) {break;}
+					char[] delimiter = {' '};
+					string[] data = line.Split(delimiter);
+
+					float[] offset_y = {0, -0.6f, 0.8f};
+
+					int type = int.Parse(data[0]);
+					float x = float.Parse(data[1]) * tilex;
+					float y = (dimy - float.Parse(data[2]) - (type < offset_y.Length ? offset_y[type] : 0)) * tiley;
+					float z = float.Parse(data[3]);
+
+					Instantiate(props[type], new Vector3(x, y, z), Quaternion.identity);
+				} while(line != null);
+				sr.Close();
+			}
+
+			return true;
+		} catch(IOException e) {
+			Debug.Log(e.Message);
+			return false;
+		}
+	}
+
+	public int GetBlock(int a, int b) {
 		if(data != null && data.Length > 0) {
 			if(a < 0 || b < 0 || a >= dimx || b >= dimy) {return 1;}
 			return data[a, b];
