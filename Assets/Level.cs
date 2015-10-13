@@ -6,7 +6,7 @@ using System;
 
 public class Level : MonoBehaviour {
 	public GameObject[] blocks = new GameObject[3]; // list of block types
-	public GameObject[] props = new GameObject[5];
+	public GameObject[] props = new GameObject[8];
 	public Transform[] walls = new Transform[4];
 
 	float tilex = 3.8f; // width of tile grid space
@@ -21,7 +21,7 @@ public class Level : MonoBehaviour {
 	float py = 5;
 
 	void Start () {
-		loadLevel("test");
+		loadLevel("fall");
 	}
 
 	void Update () {

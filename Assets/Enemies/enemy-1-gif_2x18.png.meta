@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 7be1cdd88c6934848b77eecdc6fec8c7
-timeCreated: 1443397100
+timeCreated: 1444774484
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: enemy-1-gif_2x18_0
+    21300002: enemy-1-gif_2x18_1
+    21300004: enemy-1-gif_2x18_2
+    21300006: enemy-1-gif_2x18_3
+    21300008: enemy-1-gif_2x18_4
+    21300010: enemy-1-gif_2x18_5
+    21300012: enemy-1-gif_2x18_6
+    21300014: enemy-1-gif_2x18_7
+    21300016: enemy-1-gif_2x18_8
+    21300018: enemy-1-gif_2x18_9
+    21300020: enemy-1-gif_2x18_10
+    21300022: enemy-1-gif_2x18_11
+    21300024: enemy-1-gif_2x18_12
+    21300026: enemy-1-gif_2x18_13
+    21300028: enemy-1-gif_2x18_14
+    21300030: enemy-1-gif_2x18_15
+    21300032: enemy-1-gif_2x18_16
+    21300034: enemy-1-gif_2x18_17
+    21300036: enemy-1-gif_2x18_18
+    21300038: enemy-1-gif_2x18_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +50,225 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: enemy-1-gif_2x18_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2601
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2601
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2448
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2448
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2295
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2295
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2142
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_7
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2142
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1989
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_9
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1989
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1836
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_11
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1836
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1683
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_13
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1683
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1530
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_15
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1530
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1377
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1377
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-gif_2x18_19
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1224
+        width: 244
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

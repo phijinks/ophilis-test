@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 388f2e1b40d51462baddc191e5c23ca8
-timeCreated: 1443397098
+timeCreated: 1444776508
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: enemy-2-death_4x12_0
+    21300002: enemy-2-death_4x12_1
+    21300004: enemy-2-death_4x12_2
+    21300006: enemy-2-death_4x12_3
+    21300008: enemy-2-death_4x12_4
+    21300010: enemy-2-death_4x12_5
+    21300012: enemy-2-death_4x12_6
+    21300014: enemy-2-death_4x12_7
+    21300016: enemy-2-death_4x12_8
+    21300018: enemy-2-death_4x12_9
+    21300020: enemy-2-death_4x12_10
+    21300022: enemy-2-death_4x12_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +42,145 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: enemy-2-death_4x12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2222
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2222
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2222
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2222
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2020
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2020
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2020
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2020
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1818
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1818
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_10
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1818
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-2-death_4x12_11
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1818
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
