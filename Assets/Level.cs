@@ -21,7 +21,7 @@ public class Level : MonoBehaviour {
 	float py = 5;
 
 	void Start () {
-		loadLevel("fall");
+		loadLevel("01");
 	}
 
 	void Update () {
@@ -43,7 +43,7 @@ public class Level : MonoBehaviour {
 		loadBlocks("./Assets/Levels/" + name + "_blocks.txt");
 		loadProps("./Assets/Levels/" + name + "_props.txt");
 
-		float dist = 2;
+		float dist = 4;
 		for(float y = 0; y<=(dimy*tiley); y += walls[0].GetComponent<Renderer>().bounds.size.y) {
 			Instantiate(walls[0], new Vector3(-dist, y, -1), Quaternion.identity);
 			Instantiate(walls[1], new Vector3(dist + (float)dimx * tilex, y, -1), Quaternion.identity);
@@ -95,6 +95,7 @@ public class Level : MonoBehaviour {
 			
 			GameObject player = GameObject.Find("Player");
 			player.transform.position = new Vector3(this.px, this.py, 0);
+			player.BroadcastMessage("Start");
 
 			// iterate over data array and place blocks
 			for(int x=0; x<dimx; x++) {

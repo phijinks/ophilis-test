@@ -16,11 +16,16 @@ public class Player : MonoBehaviour {
 	int totalCollisions; // number of collisions
 	int footCollisions; // number of collisions with the bottom of the collider
 
+	float spawn_x = 0;
+	float spawn_y = 0;
+
 	Animator anim;
 	bool attacked = false;
 
 	void Start () {
 		anim = GetComponent<Animator>();
+		spawn_x = transform.position.x;
+		spawn_y = transform.position.y;
 	}
 	
 	void Update () {
@@ -110,8 +115,21 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	public void MoveTo(float x, float y) {
+	public void MoveTo(float x, float y, bool spawn) {
 		transform.position = new Vector3(x, y, 0);
+		spawn_x = x;
+		spawn_y = y;
+	}
+
+	public void MoveTo(float x, float y) {
+		MoveTo(x, y, false);
+	}
+
+	public void Die() {
+		dx = 0;
+		dy = 0;
+		MoveTo(spawn_x, spawn_y);
+		//anim.Play("Spawn");
 	}
 
 	void OnCollisionStay2D(Collision2D c) {
@@ -123,11 +141,26 @@ public class Player : MonoBehaviour {
 		if (y_dist > height && dy > 0) {dy *= -0.5f;}
 	}
 
-	void OnCollisionEnter2D(Collision2D c) {totalCollisions++;}
-	void OnCollisionExit2D(Collision2D c) {totalCollisions--; if(totalCollisions < 0) {totalCollisions = 0;}}
+	void OnCollisionEnter2D(Collision2D c) {
+		string objName = c.gameObject.name;
+		if(objName.Contains ("Block")) {totalCollisions++;}
+		if(objName.Contains ("Enemy")) {
+			Die();
+		}
+	}
+	void OnCollisionExit2D(Collision2D c) {
+		string objName = c.gameObject.name;
+		if (objName.Contains ("Block")) {
+			totalCollisions--;
+			if (totalCollisions < 0) {
+				totalCollisions = 0;
+			}
+		}
+	}
 
 	void OnTriggerEnter2D(Collider2D c) {
-		if(dy <= 0 && c.gameObject.name.Contains("Block")) {
+		string objName = c.gameObject.name;
+		if(dy <= 0 && objName.Contains("Block")) {
 			footCollisions++;
 			grounded = true;
 			jumpsLeft = numJumps; // reset jumps
