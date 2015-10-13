@@ -24,8 +24,6 @@ public class Player : MonoBehaviour {
 
 	void Start () {
 		anim = GetComponent<Animator>();
-		spawn_x = transform.position.x;
-		spawn_y = transform.position.y;
 	}
 	
 	void Update () {
@@ -115,10 +113,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	public void SetSpawn() {
+		spawn_x = transform.position.x;
+		spawn_y = transform.position.y;
+	}
+
 	public void MoveTo(float x, float y, bool spawn) {
 		transform.position = new Vector3(x, y, 0);
-		spawn_x = x;
-		spawn_y = y;
+		SetSpawn ();
 	}
 
 	public void MoveTo(float x, float y) {
@@ -160,10 +162,14 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D c) {
 		string objName = c.gameObject.name;
+		Debug.Log (objName);
 		if(dy <= 0 && objName.Contains("Block")) {
 			footCollisions++;
 			grounded = true;
 			jumpsLeft = numJumps; // reset jumps
+		}
+		if (objName.Contains ("Lamppost")) {
+			SetSpawn();
 		}
 	}
 

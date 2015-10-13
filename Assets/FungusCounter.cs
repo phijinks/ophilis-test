@@ -23,7 +23,7 @@ public class FungusCounter : MonoBehaviour {
 
 	void Increment() {
 		count++;
-		Debug.Log(Percentage() * 100);
+		//Debug.Log(Percentage() * 100);
 	}
 
 	void Decrement() {

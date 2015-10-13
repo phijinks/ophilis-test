@@ -95,7 +95,7 @@ public class Level : MonoBehaviour {
 			
 			GameObject player = GameObject.Find("Player");
 			player.transform.position = new Vector3(this.px, this.py, 0);
-			player.BroadcastMessage("Start");
+			player.BroadcastMessage("SetSpawn");
 
 			// iterate over data array and place blocks
 			for(int x=0; x<dimx; x++) {
