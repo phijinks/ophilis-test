@@ -4,11 +4,13 @@ using System.Collections;
 public class Crate : MonoBehaviour {
 	private GameObject player;
 	Animator anim;
+	AudioSource audio;
 	int stage = 1; // how damaged the crate is
 	float size = 2.3f; // size of the crate
 
 	void Start () {
 		anim = GetComponent<Animator>();
+		audio = GetComponent<AudioSource>();
 		player = GameObject.Find("Player");
 		transform.localScale = new Vector3 (size, size, 1);
 	}
@@ -33,6 +35,8 @@ public class Crate : MonoBehaviour {
 	}
 
 	void Break() {
+		audio.Play();
+
 		if (anim.GetCurrentAnimatorStateInfo (0).normalizedTime < 0.5) {return;}
 
 		Vector3 p = player.transform.position;
