@@ -162,7 +162,6 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D c) {
 		string objName = c.gameObject.name;
-		Debug.Log (objName);
 		if(dy <= 0 && objName.Contains("Block")) {
 			footCollisions++;
 			grounded = true;

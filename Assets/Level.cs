@@ -21,7 +21,7 @@ public class Level : MonoBehaviour {
 	float py = 5;
 
 	void Start () {
-		loadLevel("01");
+		loadLevel("test");
 	}
 
 	void Update () {
@@ -40,8 +40,12 @@ public class Level : MonoBehaviour {
 	}
 
 	void loadLevel(string name) {
-		loadBlocks("./Assets/Levels/" + name + "_blocks.txt");
-		loadProps("./Assets/Levels/" + name + "_props.txt");
+		loadBlocks("./Assets/Levels/" + name + "/blocks.txt");
+		loadProps("./Assets/Levels/" + name + "/props.txt");
+
+		// tell the fungus counter to place blockages based on name_blockages.txt
+		GameObject fungus = GameObject.Find("FungusCounter");
+		fungus.BroadcastMessage("PlaceBlockages", name);
 
 		float dist = 4;
 		for(float y = 0; y<=(dimy*tiley); y += walls[0].GetComponent<Renderer>().bounds.size.y) {
