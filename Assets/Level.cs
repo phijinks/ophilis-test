@@ -21,7 +21,7 @@ public class Level : MonoBehaviour {
 	float py = 5;
 
 	void Start () {
-		loadLevel("test");
+		loadLevel("01");
 	}
 
 	void Update () {

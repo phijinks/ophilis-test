@@ -65,11 +65,18 @@ public class Player : MonoBehaviour {
 		bool running = (Mathf.Abs(dx) > 0.4);
 
 		// flip sprite based on x speed
-		transform.localScale = new Vector3((dx < 0 ? -1 : 1), 1, 1);
+		float flip = (dx < 0 ? -1f : 1f);
+		float scale = 1;
+		AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
+		if (info.IsName ("Run")) {
+			flip *= -1; // run animation is backwards :/
+			scale = 2; // also very small
+		}
+		transform.localScale = new Vector3(flip, 1, 1);
 
 		// thanks to http://answers.unity3d.com/questions/362629/how-can-i-check-if-an-animation-is-being-played-or.html
-		float time = anim.GetCurrentAnimatorStateInfo (0).normalizedTime;
-		if (anim.GetCurrentAnimatorStateInfo (0).IsName("Attack") && time < 1) {
+		float time = info.normalizedTime;
+		if (info.IsName("Attack") && time < 1) {
 			if(time > 0.2f && !attacked) {
 				Instantiate(projectile, transform.position + (new Vector3(0, -1.5f, 0))*transform.localScale.y, Quaternion.identity);
 				attacked = true;
