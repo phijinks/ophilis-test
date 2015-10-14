@@ -31,7 +31,7 @@ public class Blockage : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.name.Contains("Projectile") && progress >= 1f) {
 			anim.Play("C R U M B L I N G"); // maybe i shouldn't have named it that
-			Destroy(GetComponent<Collider2D>());
+			Destroy(GetComponent<Collider2D>(), 1.5f);
 		}
 	}
 }

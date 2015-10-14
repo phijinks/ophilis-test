@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1a83f15a22d5a4526ba89e5264afd1ca
-timeCreated: 1443397592
+timeCreated: 1444862035
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -43,7 +43,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -69,19 +69,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1638
-        width: 308
-        height: 234
+        y: 5733
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_1
       rect:
         serializedVersion: 2
-        x: 308
-        y: 1638
-        width: 308
-        height: 234
+        x: 1078
+        y: 5733
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -89,19 +89,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1404
-        width: 308
-        height: 234
+        y: 4914
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_3
       rect:
         serializedVersion: 2
-        x: 308
-        y: 1404
-        width: 308
-        height: 234
+        x: 1078
+        y: 4914
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -109,19 +109,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1170
-        width: 308
-        height: 234
+        y: 4095
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_5
       rect:
         serializedVersion: 2
-        x: 308
-        y: 1170
-        width: 308
-        height: 234
+        x: 1078
+        y: 4095
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,19 +129,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 936
-        width: 308
-        height: 234
+        y: 3276
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_7
       rect:
         serializedVersion: 2
-        x: 308
-        y: 936
-        width: 308
-        height: 234
+        x: 1078
+        y: 3276
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,19 +149,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 702
-        width: 308
-        height: 234
+        y: 2457
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_9
       rect:
         serializedVersion: 2
-        x: 308
-        y: 702
-        width: 308
-        height: 234
+        x: 1078
+        y: 2457
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,19 +169,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 468
-        width: 308
-        height: 234
+        y: 1638
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_11
       rect:
         serializedVersion: 2
-        x: 308
-        y: 468
-        width: 308
-        height: 234
+        x: 1078
+        y: 1638
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,19 +189,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 234
-        width: 308
-        height: 234
+        y: 819
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_13
       rect:
         serializedVersion: 2
-        x: 308
-        y: 234
-        width: 308
-        height: 234
+        x: 1078
+        y: 819
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,18 +210,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 308
-        height: 234
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: die_2x8_15
       rect:
         serializedVersion: 2
-        x: 308
+        x: 1078
         y: 0
-        width: 308
-        height: 234
+        width: 1078
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -19,6 +19,9 @@ public class Player : MonoBehaviour {
 	float spawn_x = 0;
 	float spawn_y = 0;
 
+	string[] levels = {"01", "02", "boss", "win"};
+	int levelNum = 0;
+
 	Animator anim;
 	bool attacked = false;
 
@@ -62,39 +65,57 @@ public class Player : MonoBehaviour {
 			dx *= friction;
 		}
 
-		bool running = (Mathf.Abs(dx) > 0.4);
+		bool running = (Mathf.Abs (dx) > 0.4);
 
 		// flip sprite based on x speed
 		float flip = (dx < 0 ? -1f : 1f);
-		float scale = 1;
-		AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
+		AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo (0);
 		if (info.IsName ("Run")) {
 			flip *= -1; // run animation is backwards :/
-			scale = 2; // also very small
 		}
-		transform.localScale = new Vector3(flip, 1, 1);
+		transform.localScale = new Vector3 (flip, 1, 1);
+
+		bool dying = false; // if the death animation is playing
+		if (info.IsName ("Die")) {
+			if (info.normalizedTime >= 1) {
+				Die();
+			} else {
+				dying = true;
+			}
+		}
+		bool respawning = info.IsName("Respawn");
+
 
 		// thanks to http://answers.unity3d.com/questions/362629/how-can-i-check-if-an-animation-is-being-played-or.html
 		float time = info.normalizedTime;
-		if (info.IsName("Attack") && time < 1) {
+		if ((info.IsName("Attack") || info.IsName("Jumpkick")) && time < 1) {
 			if(time > 0.2f && !attacked) {
 				Instantiate(projectile, transform.position + (new Vector3(0, -1.5f, 0))*transform.localScale.y, Quaternion.identity);
 				attacked = true;
 			}
-		} else {
+			anim.speed = 1;
+		} else if(!dying) {
 			attacked = false;
 			if (!grounded) {
-				anim.Play("Jump");
+				float frame = (jumpSpeed - dy) / (jumpSpeed*2);
+				if(frame < 0f) {frame = 0f;}
+				if(frame > 0.99f) {frame = 0.99f;}
+				anim.Play("Jump", 0, frame);
+				anim.speed = 1;
 			} else if (running) {
 				anim.Play ("Run");
 				anim.speed = Mathf.Abs (dx) * 2;
-			} else {
+			} else if(!respawning) {
 				anim.Play("Idle");
 				anim.speed = 1;
 			}
 		}
-		if(Input.GetKey(KeyCode.Space)) {
-			anim.Play("Attack");
+		if(Input.GetKey(KeyCode.Space) && !dying) {
+			if(grounded) {
+				anim.Play("Attack");
+			} else {
+				anim.Play("Jumpkick");
+			}
 		}
 
 		GetComponent<Rigidbody2D> ().MovePosition (transform.position + new Vector3 (dx, dy, 0));
@@ -138,7 +159,7 @@ public class Player : MonoBehaviour {
 		dx = 0;
 		dy = 0;
 		MoveTo(spawn_x, spawn_y);
-		//anim.Play("Spawn");
+		//anim.Play("Respawn");
 	}
 
 	void OnCollisionStay2D(Collision2D c) {
@@ -154,7 +175,8 @@ public class Player : MonoBehaviour {
 		string objName = c.gameObject.name;
 		if(objName.Contains ("Block")) {totalCollisions++;}
 		if(objName.Contains ("Enemy")) {
-			Die();
+			anim.Play("Die");
+			anim.speed = 1;
 		}
 	}
 	void OnCollisionExit2D(Collision2D c) {
@@ -176,6 +198,10 @@ public class Player : MonoBehaviour {
 		}
 		if (objName.Contains ("Lamppost")) {
 			SetSpawn();
+		}
+		if (objName.Contains ("LevelEnd")) {
+			levelNum++;
+			GameObject.Find("Level").BroadcastMessage("loadLevel", levels[levelNum]);
 		}
 	}
 

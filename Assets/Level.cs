@@ -6,8 +6,9 @@ using System;
 
 public class Level : MonoBehaviour {
 	public GameObject[] blocks = new GameObject[3]; // list of block types
-	public GameObject[] props = new GameObject[8];
+	public GameObject[] props = new GameObject[10];
 	public Transform[] walls = new Transform[4];
+	public GameObject levelEnd;
 
 	float tilex = 3.8f; // width of tile grid space
 	float tiley = 3.6f; // height of tile grid space
@@ -40,12 +41,22 @@ public class Level : MonoBehaviour {
 	}
 
 	void loadLevel(string name) {
-		loadBlocks("./Assets/Levels/" + name + "/blocks.txt");
-		loadProps("./Assets/Levels/" + name + "/props.txt");
+		GameObject[] gameObjects = GameObject.FindGameObjectsWithTag ("LevelAsset");
+		for(var i = 0 ; i < gameObjects.Length ; i ++) {
+			Destroy(gameObjects[i]);
+		}
 
 		// tell the fungus counter to place blockages based on name_blockages.txt
 		GameObject fungus = GameObject.Find("FungusCounter");
+		fungus.BroadcastMessage("Reset");
 		fungus.BroadcastMessage("PlaceBlockages", name);
+		
+		loadBlocks("./Assets/Levels/" + name + "/blocks.txt");
+		loadProps("./Assets/Levels/" + name + "/props.txt");
+
+		// hardcoded end of level because handin is tomorrow
+		if (name.Equals ("01")) {Instantiate(levelEnd, new Vector3(83.5f, 30f, 0f), Quaternion.identity);}
+		if (name.Equals ("02")) {Instantiate(levelEnd, new Vector3(204f, 23f, 0f), Quaternion.identity);}
 
 		float dist = 4;
 		for(float y = 0; y<=(dimy*tiley); y += walls[0].GetComponent<Renderer>().bounds.size.y) {

@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 16a1ff9fa9bfb48408a78f276a63d08e
+timeCreated: 1444862678
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: respawn_0
+    21300002: respawn_1
+    21300004: respawn_2
+    21300006: respawn_3
+    21300008: respawn_4
+    21300010: respawn_5
+    21300012: respawn_6
+    21300014: respawn_7
+    21300016: respawn_8
+    21300018: respawn_9
+    21300020: respawn_10
+    21300022: respawn_11
+    21300024: respawn_12
+    21300026: respawn_13
+    21300028: respawn_14
+    21300030: respawn_15
+    21300032: respawn_16
+    21300034: respawn_17
+    21300036: respawn_18
+    21300038: respawn_19
+    21300040: respawn_20
+    21300042: respawn_21
+    21300044: respawn_22
+    21300046: respawn_23
+    21300048: respawn_24
+    21300050: respawn_25
+    21300052: respawn_26
+    21300054: respawn_27
+    21300056: respawn_28
+    21300058: respawn_29
+    21300060: respawn_30
+    21300062: respawn_31
+    21300064: respawn_32
+    21300066: respawn_33
+    21300068: respawn_34
+    21300070: respawn_35
+    21300072: respawn_36
+    21300074: respawn_37
+    21300076: respawn_38
+    21300078: respawn_39
+    21300080: respawn_40
+    21300082: respawn_41
+    21300084: respawn_42
+    21300086: respawn_43
+    21300088: respawn_44
+    21300090: respawn_45
+    21300092: respawn_46
+    21300094: respawn_47
+    21300096: respawn_48
+    21300098: respawn_49
+    21300100: respawn_50
+    21300102: respawn_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: respawn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_1
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_2
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_3
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_4
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_5
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_6
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_7
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 2802
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_10
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_12
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_13
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_14
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_15
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 2335
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_17
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_18
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_19
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_20
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_21
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_22
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_23
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1868
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_25
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_26
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_27
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_28
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_29
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_30
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_31
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1401
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_33
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_34
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_35
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_36
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_37
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_38
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_39
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 934
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_41
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_42
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_43
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_44
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_45
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_46
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_47
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 467
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_49
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_50
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: respawn_51
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 235
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,7 +12,7 @@ public class FungusCounter : MonoBehaviour {
 	private List<GameObject> blockages = new List<GameObject>();
 
 	void Start () {
-		
+
 	}
 	
 	void Update () {
@@ -51,6 +51,7 @@ public class FungusCounter : MonoBehaviour {
 
 	void Reset() {
 		count = 0;
+		total = 0;
 	}
 
 	void IncrementTotal() {
@@ -59,11 +60,13 @@ public class FungusCounter : MonoBehaviour {
 
 	void Increment() {
 		count++;
-		if (blockages != null) {
+		if (blockages != null && blockages.Count > 0) {
 			foreach (GameObject b in blockages) {
+				if(b == null) {continue;}
 				b.BroadcastMessage ("Calculate", Percentage ());
 			}
 		}
+		//Debug.Log(count + " / " + total);
 		//Debug.Log(Percentage() * 100);
 	}
 
